@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style_user_list.css">
+    <title>Liste Utilisateurs</title>
+</head>
+<!-- __________________________________________________________________________________________________________________________________________________________________________________ -->
+<body>
+    <!-- Connection simple -->
+    <header>
+        <form action="" method="post" onsubmit="verification_quick_connect()">
+            <div id="quickconnect" class="row">
+                <div class="col-md-1 align-items-start text-left">
+                    <a href="index.html">
+                        <img id="logo_header" title="retour à l'accueil" src="img/monalisa03.png"alt="logo">
+                    </a>
+                </div>
+                <div lass="col-md-1 align-items-start text-left ">
+                    <a href="user_list.html " class=" " target="_self ">Qui participe déjà ?</a>
+                </div>
+                <div class="col-md-5 " style="text-align:right ">
+                    <p>Se connecter à son compte :</p>
+                </div>
+                <div class="col-md-2 ">
+                    <input id="quickpseudo " type="text " placeholder="Pseudo " class="form-control ">
+                </div>
+                <div class="col-md-2 ">
+                    <input id="quickpassword " type="password " placeholder="Mot de passe " class="form-control ">
+                </div>
+                <div class="col-md-1 ">
+                    <button class="btn btn-primary rounded self-align-right " type="submit ">Go !</button>
+                </div>
+
+            </div>
+        </form>
+    </header>
+    <!-- Block central -->
+    <!-- __________________________________________________________________________________________________________________________________________________________________________________ -->
+
+
+    <div id="main" class="row">
+
+        <div id="prenoms" class="col-md-2" >
+            <h1>Prénoms</h1>
+            <div id="first_name" ></div>
+        </div>
+
+        <div id="Noms" class="col-md-2 ">
+            <h1>Noms</h1>
+            <div id="last_name" ></div>
+        </div>
+
+        <!-- <div id="mails" class="col-md-3 ">
+            <h1>E-mails</h1>
+            <div id="email" ></div>
+        </div> -->
+
+        <div id="Genders" class="col-md-2 " >
+            <h1 style="text-align: center">Genres</h1>
+            <div id="gender"></div>
+        </div>
+
+        <!-- <div id="Connected" class="col-md-1 ">
+            <h1>Status</h1>
+            <div id="status"></div>
+        </div> -->
+
+        <div id="traffic_lightd" class="col-md-1 ">
+            <h1 style="text-align: center"> Status</h1>
+            <div id="symb2"></div>
+        </div>
+
+
+    </div>
+
+    <!-- __________________________________________________________________________________________________________________________________________________________________________________ -->
+    <footer>
+        <div class="row ">
+            <div class="col-md-4 ">
+                <img id="logo_footer " class="img-fluid " name="WatchNShow " src="image/logo.png " alt="Logo Watch 'N'Show ">
+            </div>
+            <div class="col-md-4 " style="justify-content:center" >
+                <div class="footer-widget ">
+                    <h3>Nos coordonnées</h3>
+                    <p>LA BANDE PASSANTE</p>
+                    <p>33, Grand Rue</p>
+                    <p>26000 VALENCE</p>
+                    <p>Téléphone : + 33 (0)4 75 00 00 00</p>
+                    <p>De 09h à 17h du lundi au vendredi</p>
+                    <span class="email ">contact@labandepassante.com</span>
+                </div>
+            </div>
+            <div class="col-md-4 " style="justify-content:center ">
+                <div>
+                    <h3>Notre site</h3>
+                    <div>
+                        <a href="index.html" target="_self ">Accueil</a>
+                    </div>
+                    <div>
+                        <a href="profile.html " class=" " target="_self ">Mon profile</a>
+                    </div>
+                    <div>
+                        <a href="mentions.html " class=" " target="_self ">Mentions légales</a>
+                    </div>
+                    <div>
+                        <a href="/yyy.html " class=" " target="_self ">Decouvrir des oeuvres aléatoirement</a>
+                    </div>
+                    <div>
+                        <a href="/zzz.html " class=" " target="_self ">Manuel d'utilisation du site</a>
+                    </div>
+                    <div>
+                        <a href="/xxx.html " class=" " target="_self ">Decouvrir des artistes</a>
+                    </div>
+                    <div>
+                        <a href="/blog/ " class=" " target="_self ">Actus</a>
+                    </div>
+                    <div>
+                        <a href="/contact/ " class=" " target="_self ">Contactez-nous !</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- __________________________________________________________________________________________________________________________________________________________________________________ -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="js/jquery.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl
+                            " crossorigin="anonymous "></script>
+    <script type='text/javascript' src='js/script_user_list.js'></script>
+
+</body>
+
+</html>
