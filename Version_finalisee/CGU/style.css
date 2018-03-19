@@ -1,0 +1,41 @@
+body {
+	background-color: #D9D9D9;
+	text-align: center;
+	margin-left: 250px;
+	margin-right: 250px;
+
+}
+
+h1 {
+	font-family: Lobster, Arial;
+	font-size: 4em;
+	color: #031F2A;
+	text-align: center;
+}
+
+h2{
+	font-family: Lobster, Arial;
+	font-size: 2em;
+	color: #031F2A;
+	text-align: center;
+}
+
+h3{
+	font-size: 1.25em;
+	color: #031F2A;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+ul{
+	list-style: none;
+}
+
+input{
+	font-size: 1.1em;
+	background-color: #3A9D23;
+	border-color: #3A9D23;
+	border-radius: 5px;
+
+}
