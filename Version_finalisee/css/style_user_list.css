@@ -39,10 +39,10 @@ h3 {
 	flex-wrap : wrap;
 	font-weight: bold;
 }
-/* p {
+p {
 	margin:0px;
 	padding:0px;
-} */
+}
 #logo_footer {
 	max-height:8em;
 	padding-left:1em;
@@ -68,6 +68,7 @@ ul.SansPuce {
 }
 #symb2, #gender {
 	text-align: center;
+	padding-bottom: 1em;
 }
 .img-circle {
 	border-radius: 50%;
