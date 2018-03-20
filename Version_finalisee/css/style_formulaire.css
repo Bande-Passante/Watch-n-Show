@@ -1,0 +1,271 @@
+#cgu_scale a {
+  text-decoration: none;
+  color: white;
+}
+#cgu_scale a:hover {
+  color: red;
+  transition: 0.5s;
+}
+#cgu_scale {
+  transition: 0.5s;
+  font-size: 14px;
+  align-self: center;
+  margin-right: 15px;
+}
+.row_cgu {
+  height: 30px;
+
+}
+
+/* 1053*649 */
+/* #cgu_scale:hover {
+
+} */
+#inscription, #inscription_oupas {
+  font-size: 30px;
+  color: #30c256;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+}
+#inscription_oupas {
+  transform: perspective(200px) rotateX(-90deg) translateY(0px);
+  transition: 2s;
+  display: flex;
+
+  /* transition-timing-function: ease_in_out; */
+}
+#inscription   {
+  transform: perspective(0px) rotateX(0deg) translateY(0px);
+  display: flex;
+  transition: 2s;
+}
+
+#title   {
+  display: flex;
+  transform: perspective(0px) rotateX(0deg) translateY(0px);
+  transition: 2s;
+}
+
+#title:hover #inscription {
+  transform: perspective(200px) rotateX(90deg) translateY(-20px);
+  transition: 2s;
+}
+#title:hover #inscription_oupas   {
+  transform: perspective(0px) rotateX(0deg) translateY(-20px);
+  transition: 2s;
+}
+
+#title {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  /* transform: perspective(0px) rotateX(0deg) translateY(0px); */
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form_row_one {
+  width: 100%;
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+#column_one {
+  display: flex;
+}
+#column_one {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.column_one_row_one_center {
+  display: flex;
+  /* width: 650px; */
+  /* padding-left: 50px;
+  padding-right: 50px; */
+  padding-bottom: 50px;
+  flex-direction: column;
+}
+
+.row_with_column_one {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.row_with_column {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.col_one, .col_two, .col_three {
+  display: flex;
+}
+.col_one {
+  width: 30%;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: ;
+}
+.col_two {
+  width: 55%;
+  justify-content: center;
+}
+
+.col_two_under {
+  width: 60%;
+}
+
+.col_three {
+  width: 8%;
+  margin-left: 2%;
+}
+.radio_col_one {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+}
+#btn_radio_femme_one, #btn_radio_homme_one {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+#btn_radio_femme_two, #btn_radio_homme_two {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+.row_cgu {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.col_cgu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+}
+.txt_cgu {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  height: 30px;
+  text-align: right;
+  /* margin-right: 10%; */
+}
+.check_cgu {
+  display: flex;
+  width: 10%;
+  justify-content: flex-end;
+}
+.col_check {
+  display: flex;
+  width: 10%;
+}
+.radio_col_two {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+}
+.boutons, .output {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+#output_name {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#name, #prenom, #date, #mail, #password, #password_confirm, #list_select {
+  display: flex;
+  width: 300px;
+  height :20px;
+}
+#list_select {
+  display: flex;
+  width: 310px;
+  height :25px;
+  margin-top: 10px;
+}
+.check_ok {
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+    align-self: center;
+}
+#check_ok_name, #check_ok_prenom, #check_ok_date,
+#check_ok_mail, #check_ok_password, #check_ok_password_confirm,
+#check_pas_ok_password_confirm, #check_pas_ok_name, #check_pas_ok_prenom, #check_pas_ok_date,
+#check_pas_ok_mail, #check_pas_ok_password, #check_ok_checkbox, #check_pas_ok_checkbox,
+#check_pas_ok_list_select, #check_ok_list_select, #check_ok_sexe, #check_pas_ok_sexe {
+  display: none;
+}
+
+#align_password {
+  text-align: right;
+}
+#password_confirm_test, #checkbox_test {
+  display: none;
+}
+#boutons_radio {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#btn_radio_container_one, #btn_radio_container_two {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#boite_a_cocher {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.boutons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+/* #btn_valider {
+  width: 100px;
+  height: 30px;
+} */
+
+.btn_fin, #btn_fin_one {
+  transform: scale(0.9);
+  transition: 0.5;
+  width: 100px;
+  background: #30c256;
+  width: 100px;
+  height: 30px;
+  color: white;
+  opacity: 1;
+}
+.btn_fin:hover, #btn_fin_one:hover {
+  transform: scale(1);
+  transition: 0.5;
+  background: #30c256;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+  opacity: 0.9;
+}
