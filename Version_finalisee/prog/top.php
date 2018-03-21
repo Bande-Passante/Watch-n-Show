@@ -1,4 +1,4 @@
-<?php include ("C:\wamp64\www\watch_n_show\prog\init.php"); ?>
+<?php include ("prog\init.php"); ?>
 <?php
 $reponse=$bdd->query('SELECT * FROM users WHERE ID='.$_GET['ID']);
 $donnees=$reponse->fetch();
