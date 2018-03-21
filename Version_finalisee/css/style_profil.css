@@ -121,3 +121,9 @@ input{
 #donne{
 	transform: scaleX(-1);
 }
+
+#friends{
+	display: flex;
+	flex-direction: row;
+	color: red;
+}
