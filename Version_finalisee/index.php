@@ -1,7 +1,13 @@
 <?php
-$bdd = new PDO
-
+try{
+$bdd = new PDO('mysql:host=localhost;dbname=wnsdb;charset=utf8','root','');
+}
+catch(exception $e)
+{
+  die('Erreur : ' .$e->getMessage());
+}
 ?>
+
 <head>
   <title>LANDING PAGE </title>
   <meta charset="utf-8">
