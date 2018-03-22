@@ -1,26 +1,22 @@
-<?php include ("prog/init.php"); ?>
-<?php include ("prog/top.php"); ?>
+<?php include ($_SERVER["DOCUMENT_ROOT"]."/watch_n_show/prog/init.php"); ?>
+<?php include ($_SERVER["DOCUMENT_ROOT"]."/watch_n_show/prog/top_user_profile.php"); ?>
 
-<?php $reponse=$bdd->query('SELECT * FROM users WHERE ID='.$_GET['ID']);
-$donnees=$reponse->fetch();
-?>
 		<!--                       Identity                     -->
 		<div class="col-xl-8">
 			<div id="formulaire">
 				<h2>Identité</h2>
-					<div class="container">
-						<div class="row">
-							<div class="col-xl-6">
-								<label for="nom">Mail</label><br/>
-								<p><?php echo $donnees['MAIL']; ?></p>
-							</div>
-							<div class="col-xl-6">
-								<label for="nom">password</label><br/>
-								<p><?php echo $donnees['PASSWORD']; ?></p>
-							</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-6">
+							<label for="nom">Mail</label><br/>
+							<p><?php echo $donnees['MAIL']; ?></p>
+						</div>
+						<div class="col-xl-6">
+							<label for="nom">password</label><br/>
+							<p><?php echo $donnees['PASSWORD']; ?></p>
 						</div>
 					</div>
-
+				</div>
 				<h2>Dernières publications</h2>
 				<div class="carousel">
 					<ul class="pgwSlideshow">
@@ -39,14 +35,12 @@ $donnees=$reponse->fetch();
 		<div class="col-xl-2">
 			<div id="friends">
 				<h2>Mes amis</h2>
-			<?php $friends=$bdd->query('SELECT * FROM users');
-			while ($datafriends=$friends->fetch()){?>
-			<div class="col-xl-8"><?php echo $datafriends['PSEUDO'];?></div>
-			<div class="xol-xl-4"><?php echo $datafriends['Statut'] ?></div>
-			<?php 
-		} 
+				<?php $friends=$bdd->query('SELECT * FROM users LIMIT 0,8');
+				while ($datafriends=$friends->fetch()){?>
+				<div class="col-xl-8"><a href="http://localhost/watch_n_show/user_profile.php?ID=<?php echo $datafriends['ID'];?>"><?php echo $datafriends['PSEUDO'];?></a></div>
+				<?php 
+			} 
 			?>
 		</div>
 	</div>
-
-<?php include ("prog/footer.php"); ?>
+	<?php include ($_SERVER["DOCUMENT_ROOT"]."/watch_n_show/prog/footer_user_profile.php"); ?>
