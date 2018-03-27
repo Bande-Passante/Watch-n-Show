@@ -1,0 +1,52 @@
+#left{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 200px;
+	height: 100%;
+	background-color: #123d4f;
+}
+#left h1{
+	font-family: lobster;
+	color: #d9d9d9;
+	text-align: center;
+}#left a{
+	font-family: "lobster";
+	color: #001219;
+}
+#left label, button, #profil_pseudo{
+	font-family: "Champagne & Limousines";
+	border-radius: 20px;
+}
+#profil_pseudo{
+	margin-top: 25px;
+}
+.btn-block{
+	margin-bottom: 20px;
+}
+.bcb{
+	width: 100%;
+	margin-top: 5px;
+}
+.list-group a{
+	margin-top: 30px;
+}
+.navbar{
+	background-color: #123d4f;
+	padding: 10px 0 10px 0;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.rounded-circle{
+	margin-right: 10px;
+}
+.btn-outline-light{
+	border:0;
+	background-color: #123d4f;
+	padding: 0 10px 0 10px;
+}
+.btn-right{
+	display: flex;
+	justify-content: flex-end;
+}
