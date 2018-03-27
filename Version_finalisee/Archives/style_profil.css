@@ -1,0 +1,126 @@
+/* ---------Conteneurs + images-------------*/
+
+body{
+	background-image:radial-gradient(circle at top left, #C8C8C8, #031F2A);
+}
+
+#formulaire,#friends,#dons,#notifications,#actions,#abonnés{
+	background-color: #031F2A;
+	color: #D9D9D9;
+	border-radius: 5px;
+}
+
+#dons,#notifications,#actions,#abonnés{
+	border: 2px solid #123D4F;
+}
+
+#friends img,#dons img,#notifications img,#actions img,#abonnés img{
+	width: 40px;
+	height: 40px;
+	border-radius: 80px;
+	margin-bottom: 20px;
+	align-items: center;
+
+}
+
+h1{
+	font-family: Lobster, Arial;
+	font-size: 3em;
+	color: #D9D9D9;
+}
+
+h2{
+	font-family: Lobster, Arial;
+	font-size: 2em;
+	color: #D9D9D9 ;
+	text-align: center;
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+/* --------- Header  -------------*/
+
+header{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	vertical-align: middle;
+	padding-bottom: 25px;
+}
+
+.img-profil{
+	border-radius: 100px;
+	width: 200px;
+	height: 200px;
+}
+#img-modif{
+	display: none;
+	margin-left: 0px;
+}
+
+#crayon{
+	margin-left: 0px;
+}
+/* --------- Sidebar -------------*/
+#sidebar{
+	text-align: center;
+	height: 100%;
+}
+
+.btn-primary1{
+	background-color: #031F2A;
+	border-color: #031F2A;
+	width: 100%;
+	color: white;
+}
+
+.btn-primary1,  .list-group, .list-group-1{
+	font-family: lobster,arial;
+	font-size: 1.2em;
+}
+
+.list-group .list-group-1{
+	background-color: #031F2A;
+}
+
+#nsfw{
+	background-color: #FF0921;
+}
+/* --------- Identity -------------*/
+label{
+	margin-left: 100px;
+	margin-bottom: 5px;
+}
+input{
+	margin-left: 100px;
+	width: 250px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+}
+
+#punchline{
+	width: 80%;
+	margin-bottom: 10px;
+
+}
+/* --------- Friends -------------*/
+
+#friends #pointv{
+	width: 20px;
+	height: 20px;
+}
+/* --------- Notifications -------------*/
+#notifications p{
+	text-align: center;
+}
+/* --------- Dons -------------*/
+#dons div{
+	padding-right: 0px;
+	padding-left: 0px;
+	text-align: center;
+}
+#donne{
+	transform: scaleX(-1);
+}
+
+#friends{
+}

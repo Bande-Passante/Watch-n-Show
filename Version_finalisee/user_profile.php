@@ -1,5 +1,11 @@
-<?php include ($_SERVER["DOCUMENT_ROOT"]."/watch_n_show/prog/init.php"); ?>
-<?php include ($_SERVER["DOCUMENT_ROOT"]."/watch_n_show/prog/top_user_profile.php"); ?>
+<?php 
+include ($_SERVER["DOCUMENT_ROOT"]."/watch_n_show/prog/init.php");
+
+include ($_SERVER["DOCUMENT_ROOT"]."/watch_n_show/prog/top_user_profile.php"); 
+
+include ($_SERVER["DOCUMENT_ROOT"]."/watch_n_show/prog/sidebar.php")
+?>
+
 
 		<!--                       Identity                     -->
 		<div class="col-xl-8">
@@ -9,11 +15,11 @@
 					<div class="row">
 						<div class="col-xl-6">
 							<label for="nom">Mail</label><br/>
-							<p><?php echo $donnees['MAIL']; ?></p>
+							<p><?php echo $donnees['mail']; ?></p>
 						</div>
 						<div class="col-xl-6">
 							<label for="nom">password</label><br/>
-							<p><?php echo $donnees['PASSWORD']; ?></p>
+							<p><?php echo $donnees['pw']; ?></p>
 						</div>
 					</div>
 				</div>
@@ -37,7 +43,7 @@
 				<h2>Mes amis</h2>
 				<?php $friends=$bdd->query('SELECT * FROM users LIMIT 0,8');
 				while ($datafriends=$friends->fetch()){?>
-				<div class="col-xl-8"><a href="http://localhost/watch_n_show/user_profile.php?ID=<?php echo $datafriends['ID'];?>"><?php echo $datafriends['PSEUDO'];?></a></div>
+				<div class="col-xl-8"><a href="http://localhost/watch_n_show/user_profile.php?ID=<?php echo $datafriends['id'];?>"><?php echo $datafriends['pseudo'];?></a></div>
 				<?php 
 			} 
 			?>

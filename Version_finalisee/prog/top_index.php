@@ -18,7 +18,7 @@
 			</div>
 		</div>
 		<div id="header_right">
-			<form method="post" action="index.php">
+			<form method="post" action="hud_watch_n_show.php">
 				<div id="contain_globale">
 					<div class="under_box">
 						<div id="contain_one">
@@ -62,26 +62,3 @@
 			</form>
 		</div>
 	</header>
-	<!-- <?php
-	if (!empty($_POST['identifiant'])){
-		$identifiant=$_POST['identifiant'];
-	$pseudos = $bdd->query("SELECT PSEUDO FROM users WHERE PSEUDO ='.$identifiant'");
-	$donnees_pseudos=$pseudos->fetch();
-
-
-
-	$user_password=$_POST['user_password'];
-	$passwords = $bdd->query("SELECT PASSWORD FROM users WHERE PASSWORD ='.$user_password'");
-	$donnees_password=$passwords->fetch();
-
-	if (($identifiant == $donnees_pseudos['PSEUDO'] AND $user_password == $donnees_password['PASSWORD'])){
-
-		session_start();
-		$_SESSION['PSEUDO']= $identifiant;
-		echo "Bienvenue !";
-	}
-	else{
-		echo "Mauvais identifiant ou mot de passe";
-	}
-}
-?> -->

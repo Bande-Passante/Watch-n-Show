@@ -47,11 +47,14 @@
 </body>
 
 <?php
-if (!empty($_POST['pseudo'])){
+if (!empty($_POST['pseudo']) && (!empty($_POST['email'])) && (!empty($_POST['password']))){
   $pseudo = $_POST['pseudo'];
+  $date=$_POST['birth_date'];
   $mail = $_POST['email'];
+  $gender = $_POST['gender'];
   $password = $_POST['password'];
 
-  $bdd->exec("INSERT INTO users (PSEUDO, MAIL, PASSWORD) VALUES ( '$pseudo', '$mail', '$password')");
+
+  $bdd->exec("INSERT INTO users (pseudo, birth, mail, pw, gender) VALUES ( '$pseudo', '$date',  '$mail', '$password', '$gender')");
 }
 ?>

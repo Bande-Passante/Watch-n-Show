@@ -1,5 +1,10 @@
-<?php include ($_SERVER["DOCUMENT_ROOT"]."/watch_n_show/prog/init.php"); ?>
-<?php include ($_SERVER["DOCUMENT_ROOT"]."/watch_n_show/prog/top_index.php"); ?>
+<?php 
+include ($_SERVER["DOCUMENT_ROOT"]."/watch_n_show/prog/init.php");
+
+include ($_SERVER["DOCUMENT_ROOT"]."/watch_n_show/prog/cookies.php");
+
+include ($_SERVER["DOCUMENT_ROOT"]."/watch_n_show/prog/top_index.php"); 
+?>
 
 <div class="landing_row_two">
   <div class="landing_row_two_col_one">
@@ -124,7 +129,7 @@
               <div class="col_one">
               </div>
               <div class="col_two">
-                <select id="list_select" name="sexe" >
+                <select id="list_select" name="gender" >
                   <option class="xx" value="">sexe</option>
                   <option class="xx" value="femme">Femme</option>
                   <option class="xx" value="homme">Homme</option>
