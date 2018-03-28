@@ -1,0 +1,16 @@
+SELECT *
+FROM users
+LEFT JOIN followers ON users.id = followers.users_id
+
+SELECT *
+FROM users
+LEFT JOIN followers ON users.id = followers.users_id
+WHERE followers.users_id IS NULL
+
+SELECT *
+FROM users
+WHERE pseudo LIKE 'N%'
+
+SELECT users_id, COUNT(users_id1)
+FROM followers
+GROUP BY users_id
